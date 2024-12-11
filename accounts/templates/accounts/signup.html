@@ -1,0 +1,20 @@
+{% extends '_base.html' %}
+{% load static %}
+{% block title %}
+  signup
+{% endblock %}
+
+{% block body %}
+    <div class="container">
+    <div class="row">
+        <div class="col-md-4 mt-3 mb-3">
+        <form action="" method="post">
+           {% csrf_token %}
+             {{ form }}
+        </form>
+        </div>
+    </div>
+    </div>
+
+{% endblock %}
+
